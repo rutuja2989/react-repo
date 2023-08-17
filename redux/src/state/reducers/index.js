@@ -1,0 +1,11 @@
+
+//this reducer function combines all the reducers and export it
+import { combineReducers } from "redux";
+import amountreducer from "./amountreducer";
+
+
+const reducers=combineReducers({
+    amount:amountreducer
+})
+
+export default reducers
